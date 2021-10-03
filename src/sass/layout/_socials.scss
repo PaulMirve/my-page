@@ -1,0 +1,23 @@
+.socials {
+    &__icons {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+
+
+        @include respond(phone) {
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+
+    &__icon {
+        cursor: pointer;
+        transition: transform 0.2s ease-in;
+        fill: $color-primary;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: $color-dark;
+    display: flex;
+    padding: 1em 2em;
+    z-index: 10;
+
+    &__links {
+        margin-left: auto;
+        font-size: clamp(1rem ,1vw, 1.8rem);
+        display: flex;
+        gap: 1vw;
+    }
+
+    &__link {
+        color: $color-primary;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        outline: none;
+    }
+}

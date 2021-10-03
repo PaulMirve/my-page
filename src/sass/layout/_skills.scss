@@ -1,0 +1,10 @@
+.skills {
+    display: grid;
+    justify-items: center;
+    &__grid {
+        width: 35%;
+        display: grid;
+        gap: 2rem 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    }
+}

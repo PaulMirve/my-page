@@ -1,0 +1,27 @@
+.job {
+    &__title {
+        font-size: 2.8rem;
+    }
+
+    &__activities {
+        list-style-type: none;
+        font-size: 1.6rem;
+
+        &>div:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        &>div {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: start;
+            gap: 0.5rem;
+
+            & svg {
+                width: 2rem;
+                height: 2rem;
+                fill: $color-primary;
+            }
+        }
+    }
+}

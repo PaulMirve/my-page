@@ -7,4 +7,21 @@
 @import 'base/typography.scss';
 @import 'base/utilities.scss';
 
+@import 'components/heading';
+@import 'components/card';
+@import 'components/project';
+@import 'components/button';
+@import 'components/skill';
+@import 'components/navbar';
+@import 'components/job';
+@import 'components/horizontal-menu';
+
+@import 'layout/header';
+@import 'layout/introduction';
+@import 'layout/socials';
+@import 'layout/skills';
+@import 'layout/footer';
+@import 'layout/projects';
+@import 'layout/jobs';
+
 @import 'pages/home';
