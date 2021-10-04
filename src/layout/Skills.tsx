@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Skill from '../components/Skill/Skill'
 import Icons from '../enumerables/Icons'
 import ISkill from '../interfaces/Skill'
@@ -55,10 +56,12 @@ const skills: ISkill[] = [
 ]
 
 const Skills = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="skills" className="skills">
             <h1 className="heading heading--primary tac mb-md">
-                My Skills
+                {t("skills.heading")}
             </h1>
             <div className="skills__grid">
                 {

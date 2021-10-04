@@ -20,7 +20,11 @@
         "widget-3": "Builded and coded large scale desktop projects",
         "widget-4": "Builded and designed attractive and responsive web designs"
     },
+    "skills": {
+        "heading": "My Skills"
+    },
     "projects": {
+        "heading": "My personal projects",
         "see_preview": "See preview",
         "pets": "I made a social network to upload photos of pets. I taked a lot of inspiration from the Instagram desing.The photos are cropped and resized in the backend to take less space in disk. It was a very fun project to make, I enjoyed the creation of the components and the styiling.",
         "creative_expo": "In my current work, there is a dynamic that a employee can do expos about whatever topic your are passionate about or find interesting. I talked about CSS Grid because it changes my way of building web layouts. I builded it with react to make interactive examples. My co-workers loved it.",
@@ -28,6 +32,7 @@
         "japanese_project": "For my final project of my japanese course I have to make some project that involves all the topics of the course. I thought make a web app would be a good idea because it can persist in the web for future consults about what I saw in the course."
     },
     "jobs": {
+        "heading": "Places where I've worked",
         "spark_techs": {
             "point-1": "Worked alongside Skyworks Mexicali in the building and maintainance of industrial machine software. This involved creating and maintaining website and desktop application that the operators of the machines will use to keep control of the industrial production.",
             "point-2": "Worked alongside Kenworth Mexicali in the building of a web app to keep control of the quality assurance of the trucks they assemble.",
@@ -37,6 +42,9 @@
             "point-1": "Builded a web application to help the users to keep control over their KPI's using charts. Builded the backend and frontend of the application.",
             "point-2": "Builded a penitenciary desktop application, made to keep control of the proccesses inside of a jail like the insertion of a convict, hospitalary services, inventories inside the prision and all the proccesses realized inside a prison."
         }
+    },
+    "socials": {
+        "heading": "Where you can find me"
     },
     "footer": {
         "code": "The code of this page can be find <b>here</b>"

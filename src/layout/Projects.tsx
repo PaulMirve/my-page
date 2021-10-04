@@ -45,7 +45,7 @@ const Projects = () => {
     return (
         <section id="projects" className="projects">
             <h1 className="heading heading--primary tac mb-md">
-                My personal projects
+                {t("projects.heading")}
             </h1>
             {
                 projects.map((project, index) => {

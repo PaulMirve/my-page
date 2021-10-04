@@ -29,7 +29,7 @@ const Jobs = () => {
 
     return (
         <section id="jobs" className="jobs">
-            <h1 className="heading heading--primary tac mb-md">Places where I've worked</h1>
+            <h1 className="heading heading--primary tac mb-md">{t("jobs.heading")}</h1>
 
             <div className="jobs__layout">
                 <HorizontalMenu jobs={jobs.map(job => job.name)} onChange={(index) => setSelectedJob(index)} />

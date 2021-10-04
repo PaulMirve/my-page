@@ -1,16 +1,15 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Icon from '../components/Icon/Icon'
 import Icons from '../enumerables/Icons'
 
-interface Props {
 
-}
-
-const Socials = (props: Props) => {
+const Socials = () => {
+    const { t } = useTranslation();
     return (
         <section id="socials" className="socials">
             <h1 className="heading heading--primary tac">
-                Where you can find me
+                {t("socials.heading")}
             </h1>
             <div className="socials__icons">
                 <a
