@@ -3,19 +3,26 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
     }
 
-    &--left &__frame{
+    &--left &__frame {
         grid-column: 5 / 12;
         grid-row: 1 /2;
     }
 
-    &--left &__content{
+    &--left &__content {
         grid-column: 2 / 6;
         grid-row: 1 / 2;
+    }
+
+    &--left &__frame {
+        @include respond(tab-land) {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
 
     &__frame {
@@ -24,28 +31,29 @@
         height: 100%;
         width: 100%;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color:rgba($color-black, 0.6);
+            background-color: rgba($color-black, 0.6);
             z-index: 1;
             transform: scaleX(0);
             transform-origin: top left;
             transition: transform 0.2s ease-in;
         }
-        
 
-        &:hover{
-            &::after{
+
+        &:hover {
+            &::after {
                 transform: scaleX(1);
             }
         }
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
             grid-column: auto;
             grid-row: auto;
         }
@@ -58,15 +66,15 @@
         }
     }
 
-    &--left &__frame::after{
+    &--left &__frame::after {
         transform-origin: right;
     }
 
-    &__frame:hover &__preview{
+    &__frame:hover &__preview {
         opacity: 1;
     }
 
-    &__preview{
+    &__preview {
         position: absolute;
         z-index: 2;
         font-size: 2.4rem;
@@ -76,12 +84,20 @@
         opacity: 0;
         @include absCenter;
         transition: opacity 0.2s ease-in;
-        
-        &:hover{
+
+        &:hover {
             border-bottom: 1px solid $color-white;
         }
     }
 
+    &--left &__content {
+        @include respond(tab-land) {
+            grid-column: auto;
+            grid-row: auto;
+            height: 100%;
+            text-align: center;
+        }
+    }
 
     &__content {
         position: relative;
@@ -89,7 +105,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        padding:  4em;
+        padding: 4em;
         border-radius: 5px;
         background-color: $color-dark-2;
         height: 80%;
@@ -97,7 +113,7 @@
         grid-row: 1 / 2;
         transition: transform 0.2s ease-in;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
             grid-column: auto;
             grid-row: auto;
             height: 100%;
@@ -114,23 +130,24 @@
         text-align: center;
     }
 
-    &__stack{
+    &__stack {
         display: flex;
         justify-content: center;
         gap: 0.5rem;
-        & svg{
+
+        & svg {
             fill: $color-primary;
             height: 3rem;
             width: 3rem;
         }
     }
 
-    &__description{
+    &__description {
         flex-grow: 1;
         font-size: clamp(0.5rem, 1vw, 1.6rem);
     }
 
-    &__links{
+    &__links {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(2, 1fr);

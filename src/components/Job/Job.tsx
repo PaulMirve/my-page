@@ -11,7 +11,7 @@ const Job = ({ name, tasks }: IJob) => {
                 {
                     tasks.map((task, index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <Icon className="card__icon" icon={Icons.caret_forward} />
                                 <p>
                                     {task}

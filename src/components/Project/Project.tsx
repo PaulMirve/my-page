@@ -1,12 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import IProject from '../../interfaces/Project'
 import Icon from '../Icon/Icon'
 
 const Project: React.FC<IProject> = ({ name, description, img, repo, live, orientation, stack }) => {
+    const { t } = useTranslation();
     return (
         <div className={`project ${orientation === "left" ? 'project--left' : ' '}`}>
             <div className="project__frame">
-                <p className="project__preview">See preview</p>
+                <p className="project__preview">{t("projects.see_preview")}</p>
                 <img src={img} alt={name} />
             </div>
             <div className="project__content">
@@ -22,8 +24,8 @@ const Project: React.FC<IProject> = ({ name, description, img, repo, live, orien
                     {description}
                 </div>
                 <div className="project__links">
-                    <a href={repo} className="btn btn--small btn--link">View repo</a>
-                    <a href={live} className="btn btn--small btn--link">View live</a>
+                    <a target="_blank" rel="noopener noreferrer" href={repo} className="btn btn--small btn--link">View repo</a>
+                    <a target="_blank" rel="noopener noreferrer" href={live} className="btn btn--small btn--link">View live</a>
                 </div>
             </div>
         </div>

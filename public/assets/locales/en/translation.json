@@ -1,0 +1,44 @@
+{
+    "navbar": {
+        "about_me": "About Me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "jobs": "Jobs",
+        "socials": "Socials",
+        "resources": "Resources"
+    },
+    "header": {
+        "caption": "A <b>fullstack</b> developer with passion for the <b>frontend</b>"
+    },
+    "introduction": {
+        "about_me": {
+            "tag": "About me",
+            "description": "Hi! I'm Paul Miranda. I'm a software developer with years of experience in web and desktop development. I love Typescript and Javascript and enjoy working in projects with these languages involved. I'm always curious about new technologies and I like to try them as a hobbie. I love the frontend development and technologies and I like to apply my knowledges making personal projects (you can find more about them in the project section). I have worked alongside worldwide companies like Kenworth and Skyworks."
+        },
+        "widget-1": "Experienced in web development, server side and client side",
+        "widget-2": "Worked in backend applications in multiple technologies",
+        "widget-3": "Builded and coded large scale desktop projects",
+        "widget-4": "Builded and designed attractive and responsive web designs"
+    },
+    "projects": {
+        "see_preview": "See preview",
+        "pets": "I made a social network to upload photos of pets. I taked a lot of inspiration from the Instagram desing.The photos are cropped and resized in the backend to take less space in disk. It was a very fun project to make, I enjoyed the creation of the components and the styiling.",
+        "creative_expo": "In my current work, there is a dynamic that a employee can do expos about whatever topic your are passionate about or find interesting. I talked about CSS Grid because it changes my way of building web layouts. I builded it with react to make interactive examples. My co-workers loved it.",
+        "penny": "This was a very fun project to make. My girlfriend have a little dog called Penny and we like to share photos and memes of her. I made a web page to know her and a poll to vote for the most epic Penny. I have to learn the basics of firebase to save the poll results of this app.",
+        "japanese_project": "For my final project of my japanese course I have to make some project that involves all the topics of the course. I thought make a web app would be a good idea because it can persist in the web for future consults about what I saw in the course."
+    },
+    "jobs": {
+        "spark_techs": {
+            "point-1": "Worked alongside Skyworks Mexicali in the building and maintainance of industrial machine software. This involved creating and maintaining website and desktop application that the operators of the machines will use to keep control of the industrial production.",
+            "point-2": "Worked alongside Kenworth Mexicali in the building of a web app to keep control of the quality assurance of the trucks they assemble.",
+            "point-3": "Colaborated in the SERVCO project, a internal web application to keep control of all the employees inside the organization as well as the control of their payments, vacations, assurances, and all the matters that involves the employee."
+        },
+        "application_software": {
+            "point-1": "Builded a web application to help the users to keep control over their KPI's using charts. Builded the backend and frontend of the application.",
+            "point-2": "Builded a penitenciary desktop application, made to keep control of the proccesses inside of a jail like the insertion of a convict, hospitalary services, inventories inside the prision and all the proccesses realized inside a prison."
+        }
+    },
+    "footer": {
+        "code": "The code of this page can be find <b>here</b>"
+    }
+}

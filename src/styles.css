@@ -86,7 +86,7 @@ b {
 
 .card {
   border: 3px solid #4069ee;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +154,12 @@ b {
   grid-column: 2/6;
   grid-row: 1/2;
 }
+@media (max-width: 75em) {
+  .project--left .project__frame {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
 .project__frame {
   grid-column: 2/9;
   grid-row: 1/2;
@@ -211,6 +217,14 @@ b {
 }
 .project__preview:hover {
   border-bottom: 1px solid #f8f9fa;
+}
+@media (max-width: 75em) {
+  .project--left .project__content {
+    grid-column: auto;
+    grid-row: auto;
+    height: 100%;
+    text-align: center;
+  }
 }
 .project__content {
   position: relative;
@@ -429,6 +443,7 @@ b {
 @media (max-width: 37.5em) {
   .socials__icons {
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
   }
 }
@@ -454,7 +469,7 @@ b {
 
 .footer {
   background-color: #161a1d;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 4em;
 }
 

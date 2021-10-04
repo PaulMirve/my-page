@@ -7,11 +7,7 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Socials from './Socials'
 
-interface Props {
-
-}
-
-const Landing: React.FC<Props> = () => {
+const Landing = () => {
     return (
         <>
             <Header />
