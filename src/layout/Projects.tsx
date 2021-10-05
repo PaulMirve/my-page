@@ -30,7 +30,7 @@ const Projects = () => {
             img: 'https://picsum.photos/650/400?random=3',
             repo: '',
             live: 'https://penny-1f143.web.app',
-            stack: [Icons.javascript, Icons.react, Icons.sass]
+            stack: [Icons.javascript, Icons.react, Icons.firebase, Icons.sass]
         },
         {
             name: "Japanese Project",

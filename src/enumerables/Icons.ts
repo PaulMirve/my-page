@@ -18,7 +18,12 @@ enum Icons {
     express = 'icon-ex',
     csharp = 'icon-csharp',
     mongo = 'icon-mongo',
-    caret_forward = 'icon-caret-forward'
+    caret_forward = 'icon-caret-forward',
+    java = 'icon-java',
+    springboot = 'icon-springboot',
+    firebase = 'icon-firebase',
+    sqlserver = 'icon-sqlserver',
+    mysql = 'icon-mysql'
 }
 
 export default Icons;

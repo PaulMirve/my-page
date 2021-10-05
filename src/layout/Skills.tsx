@@ -50,9 +50,17 @@ const skills: ISkill[] = [
         name: 'C#'
     },
     {
+        icon: Icons.java,
+        name: 'Java'
+    },
+    {
+        icon: Icons.springboot,
+        name: 'Springboot'
+    },
+    {
         icon: Icons.mongo,
         name: 'MongoDB'
-    },
+    }
 ]
 
 const Skills = () => {
