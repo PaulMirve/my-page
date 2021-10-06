@@ -12,7 +12,7 @@
     },
     "introduction": {
         "about_me": {
-            "tag": "About me",
+            "tag": "Acerca de mi",
             "description": "Soy Paul Miranda, un desarrollador de software con años de experiencia en el desarrollo web y aplicaciones de escritorio. Me gusta mucho Typescript y Javascript y disfruto mucho de trabajar en proyectos con estos lenguages involucrados. Siempre me mantengo curioso acerca de las nuevas tecnologías que salen y trato de probarlas y escribir aplicaciones sencillas con ellas como hobbie. Me gusta mucho el frontend y sus tecnologías y trato de usarlas siempre en proyectos personales (como podemos ver en la sección de Proyectos de esta página)."
         },
         "widget-1": "Experimentado in desarrollo web, tanto del lado del cliente como del servidor.",
