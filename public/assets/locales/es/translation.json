@@ -48,6 +48,7 @@
         "heading": "Lugares donde puedes encontrarme"
     },
     "footer": {
-        "code": "The code of this page can be find <b>here</b>"
+        "code": "El código de esta página puede ser encontrado <a target='_blank' rel='noopener noreferrer' href='https://github.com/PaulMirve'>aquí</a>",
+        "made_by": "El código y diseño de esta página esta hecho por <b>Paul Miranda<b/>"
     }
 }

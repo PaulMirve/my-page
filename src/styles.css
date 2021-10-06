@@ -25,6 +25,13 @@ body {
   background-color: #20232a;
 }
 
+a {
+  font-weight: 600;
+  color: #4069ee;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 main {
   padding: 0 10vw;
 }
@@ -494,6 +501,9 @@ b {
   background-color: #161a1d;
   font-size: 1.4rem;
   padding: 4em;
+}
+.footer small {
+  color: #8892b0;
 }
 
 .projects > div {

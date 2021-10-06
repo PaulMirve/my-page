@@ -48,6 +48,7 @@
         "heading": "Where you can find me"
     },
     "footer": {
-        "code": "The code of this page can be find <b>here</b>"
+        "code": "The code of this page can be find <a target='_blank' rel='noopener noreferrer' href='https://github.com/PaulMirve'>here</a>",
+        "made_by": "All the code and design of this page was made by <b>Paul Miranda</b>"
     }
 }

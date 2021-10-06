@@ -1,5 +1,9 @@
-.footer{
+.footer {
     background-color: $color-dark-2;
     font-size: 1.4rem;
     padding: 4em;
+
+    & small {
+        color: $color-grey;
+    }
 }

@@ -17,6 +17,13 @@ body {
     background-color: $color-dark;
 }
 
+a {
+    font-weight: 600;
+    color: $color-primary;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 main {
     padding: 0 10vw;
 
@@ -26,5 +33,5 @@ main {
 }
 
 section:not(:first-child) {
-   padding: 10rem 0;
+    padding: 10rem 0;
 }
