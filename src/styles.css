@@ -81,7 +81,7 @@ b {
   font-size: clamp(5rem, 8vw, 12rem);
 }
 .heading--primary {
-  font-size: 6rem;
+  font-size: clamp(4rem, 4vw, 6rem);
 }
 
 .card {
@@ -337,9 +337,24 @@ b {
 .job__title {
   font-size: 2.8rem;
 }
+.job__stack {
+  display: flex;
+  gap: 1rem;
+  padding: 1em 0;
+}
+.job__stack svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #4069ee;
+  color: #4069ee;
+}
+@media (max-width: 56.25em) {
+  .job__stack {
+    justify-content: center;
+  }
+}
 .job__activities {
   list-style-type: none;
-  font-size: 1.6rem;
 }
 .job__activities > div:not(:first-child) {
   margin-top: 2rem;
@@ -355,6 +370,14 @@ b {
   height: 2rem;
   fill: #4069ee;
 }
+@media (max-width: 56.25em) {
+  .job__activities > div svg {
+    display: none;
+  }
+}
+.job__task {
+  font-size: 1.6rem;
+}
 
 .horizontal-menu {
   display: flex;
@@ -363,7 +386,7 @@ b {
   gap: 1.5rem;
   border-left: 1px solid #8892b0;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .horizontal-menu {
     flex-direction: row;
     border-left: none;
@@ -376,7 +399,7 @@ b {
   border: none;
   color: #8892b0;
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 1.4vw, 2.4rem);
   cursor: pointer;
   position: relative;
   padding: 0.5em 1em;
@@ -393,7 +416,7 @@ b {
   top: 0;
   left: -3px;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .horizontal-menu__btn.active::before {
     left: 0;
     top: 97%;
@@ -487,7 +510,7 @@ b {
   gap: 2rem;
   width: 60%;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .jobs__layout {
     grid-template-columns: 1fr;
     width: 90%;

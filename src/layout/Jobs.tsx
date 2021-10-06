@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Heading from '../components/Heading/Heading'
 import HorizontalMenu from '../components/HorizontalMenu/HorizontalMenu'
 import Job from '../components/Job/Job'
+import Icons from '../enumerables/Icons'
 import IJob from '../interfaces/Job'
 
 
@@ -11,25 +13,30 @@ const Jobs = () => {
 
     const jobs: IJob[] = [
         {
-            name: 'Software Developer',
+            name: 'Spark Technologies',
+            title: "Software Developer",
             tasks: [
                 t("jobs.spark_techs.point-1"),
                 t("jobs.spark_techs.point-2"),
                 t("jobs.spark_techs.point-3"),
-            ]
+            ],
+            stack: [Icons.csharp, Icons.react, Icons.sqlserver, Icons.graphql],
+            current: true
         },
         {
-            name: 'Software Developer',
+            name: 'Application Software',
+            title: 'Software Developer',
             tasks: [
                 t("jobs.application_software.point-1"),
                 t("jobs.application_software.point-2"),
-            ]
+            ],
+            stack: [Icons.react, Icons.redux, Icons.java, Icons.springboot, Icons.csharp]
         },
     ]
 
     return (
         <section id="jobs" className="jobs">
-            <h1 className="heading heading--primary tac mb-md">{t("jobs.heading")}</h1>
+            <Heading aligned className="mb-md">{t("jobs.heading")}</Heading>
 
             <div className="jobs__layout">
                 <HorizontalMenu jobs={jobs.map(job => job.name)} onChange={(index) => setSelectedJob(index)} />

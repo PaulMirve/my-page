@@ -3,9 +3,25 @@
         font-size: 2.8rem;
     }
 
+    &__stack {
+        display: flex;
+        gap: 1rem;
+        padding: 1em 0;
+
+        & svg {
+            width: 3rem;
+            height: 3rem;
+            fill: $color-primary;
+            color: $color-primary;
+        }
+
+        @include respond(tab-port){
+            justify-content: center;
+        }
+    }
+
     &__activities {
         list-style-type: none;
-        font-size: 1.6rem;
 
         &>div:not(:first-child) {
             margin-top: 2rem;
@@ -21,7 +37,17 @@
                 width: 2rem;
                 height: 2rem;
                 fill: $color-primary;
+
+                @include respond(tab-port) {
+                    display: none;
+                }
             }
+
+
         }
+    }
+
+    &__task{
+        font-size: 1.6rem;
     }
 }

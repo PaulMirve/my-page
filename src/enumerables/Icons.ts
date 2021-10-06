@@ -23,7 +23,8 @@ enum Icons {
     springboot = 'icon-springboot',
     firebase = 'icon-firebase',
     sqlserver = 'icon-sqlserver',
-    mysql = 'icon-mysql'
+    mysql = 'icon-mysql',
+    graphql = 'icon-graphql'
 }
 
 export default Icons;

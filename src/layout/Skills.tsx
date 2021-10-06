@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Heading from '../components/Heading/Heading'
 import Skill from '../components/Skill/Skill'
 import Icons from '../enumerables/Icons'
 import ISkill from '../interfaces/Skill'
@@ -68,9 +69,9 @@ const Skills = () => {
 
     return (
         <section id="skills" className="skills">
-            <h1 className="heading heading--primary tac mb-md">
+            <Heading aligned className="mb-md">
                 {t("skills.heading")}
-            </h1>
+            </Heading>
             <div className="skills__grid">
                 {
                     skills.map((skill, index) => {

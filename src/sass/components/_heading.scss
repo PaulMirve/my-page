@@ -4,6 +4,6 @@
     }
 
     &--primary {
-        font-size: 6rem;
+        font-size: clamp(4rem, 4vw, 6rem);
     }
 }

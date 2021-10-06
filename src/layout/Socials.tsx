@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Heading from '../components/Heading/Heading'
 import Icon from '../components/Icon/Icon'
 import Icons from '../enumerables/Icons'
 
@@ -8,9 +9,9 @@ const Socials = () => {
     const { t } = useTranslation();
     return (
         <section id="socials" className="socials">
-            <h1 className="heading heading--primary tac">
+            <Heading aligned>
                 {t("socials.heading")}
-            </h1>
+            </Heading>
             <div className="socials__icons">
                 <a
                     target="_blank"

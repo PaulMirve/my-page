@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Heading from '../components/Heading/Heading'
 import Project from '../components/Project/Project'
 import Icons from '../enumerables/Icons'
 import IProject from '../interfaces/Project'
@@ -44,9 +45,9 @@ const Projects = () => {
 
     return (
         <section id="projects" className="projects">
-            <h1 className="heading heading--primary tac mb-md">
+            <Heading aligned className="mb-md">
                 {t("projects.heading")}
-            </h1>
+            </Heading>
             {
                 projects.map((project, index) => {
                     return <Project key={index} orientation={index % 2 !== 0 ? "left" : "right"} {...project} />

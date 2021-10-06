@@ -32,19 +32,20 @@
         "japanese_project": "Para mi proyecto final de japonés tenía que hacer un proyecto donde combinara todos los temas que vimos en el curso. Pensé que sería una buena idea tener una págna web que también sirviera como temario para cuando quisiera volver a repasar o consultar esos temas."
     },
     "jobs": {
-        "heading": "Places where I've worked",
+        "current": "trabajo actual",
+        "heading": "Experiencia profesional",
         "spark_techs": {
-            "point-1": "Worked alongside Skyworks Mexicali in the building and maintainance of industrial machine software. This involved creating and maintaining website and desktop application that the operators of the machines will use to keep control of the industrial production.",
-            "point-2": "Worked alongside Kenworth Mexicali in the building of a web app to keep control of the quality assurance of the trucks they assemble.",
-            "point-3": "Colaborated in the SERVCO project, a internal web application to keep control of all the employees inside the organization as well as the control of their payments, vacations, assurances, and all the matters that involves the employee."
+            "point-1": "En conjunto con Skyworks Mexicali, trabajé en la creación y mantenimiento de software para máquinas industriales, esto involucraba el desarrollo de aplicaciones web y de escritorio que los operadores de la maquinaria pudieran manejar para llevar el control en la proudcción.",
+            "point-2": "En conjunto con Kenworth Mexicali, trabajé en el desarrollo de una aplicación web para mantener el control de cálidad de los camiones que ensamblan.",
+            "point-3": "Colaboré en el proyecto SERVCO, un sistema desarrollado para el departamento de recursos humanos y contaduría para llevar el control de los colaboradores de la empresa y manejar aspectos como su nómina, seguros, vacaciones, y todos los aspectos relacionados con el trabajador dentro de la empresa."
         },
         "application_software": {
-            "point-1": "Builded a web application to help the users to keep control over their KPI's using charts. Builded the backend and frontend of the application.",
-            "point-2": "Builded a penitenciary desktop application, made to keep control of the proccesses inside of a jail like the insertion of a convict, hospitalary services, inventories inside the prision and all the proccesses realized inside a prison."
+            "point-1": "Construí una aplicación web para ayudar a los usuarios a mantener controles de sus KPI (Key Performance Indicator). Los usuarios ingresaban fuentes de datos que posteriormente podían modelar para ver la información mostrada en forma de gráficas.",
+            "point-2": "Construí un aplicación de escritorio para sistemas penitenciarios, donde se mantenía el control de la entrada de los presos y procesos que se llevaban a cabo dentro de la prisión como salud y visitas."
         }
     },
     "socials": {
-        "heading": "Where you can find me"
+        "heading": "Lugares donde puedes encontrarme"
     },
     "footer": {
         "code": "The code of this page can be find <b>here</b>"

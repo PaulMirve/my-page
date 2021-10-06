@@ -32,6 +32,7 @@
         "japanese_project": "For my final project of my japanese course I have to make some project that involves all the topics of the course. I thought make a web app would be a good idea because it can persist in the web for future consults about what I saw in the course."
     },
     "jobs": {
+        "current": "actual job",
         "heading": "Places where I've worked",
         "spark_techs": {
             "point-1": "Worked alongside Skyworks Mexicali in the building and maintainance of industrial machine software. This involved creating and maintaining website and desktop application that the operators of the machines will use to keep control of the industrial production.",
