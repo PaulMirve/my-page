@@ -8,7 +8,7 @@
 
     &__links {
         margin-left: auto;
-        font-size: clamp(1rem ,1vw, 1.8rem);
+        font-size: clamp(1rem, 1vw, 1.8rem);
         display: flex;
         gap: 1vw;
     }
@@ -19,5 +19,19 @@
         font-weight: 700;
         text-transform: uppercase;
         outline: none;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        & svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $color-primary;
+            color: $color-primary;
+        }
     }
 }

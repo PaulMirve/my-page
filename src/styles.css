@@ -340,6 +340,18 @@ b {
   text-transform: uppercase;
   outline: none;
 }
+.navbar__button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navbar__button svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #4069ee;
+  color: #4069ee;
+}
 
 .job__title {
   font-size: 2.8rem;

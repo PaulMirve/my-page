@@ -24,7 +24,8 @@ enum Icons {
     firebase = 'icon-firebase',
     sqlserver = 'icon-sqlserver',
     mysql = 'icon-mysql',
-    graphql = 'icon-graphql'
+    graphql = 'icon-graphql',
+    language = 'icon-language'
 }
 
 export default Icons;
