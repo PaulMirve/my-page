@@ -93,7 +93,7 @@ b {
 
 .card {
   border: 3px solid #4069ee;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -497,7 +497,7 @@ b {
 }
 .introduction__me {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 5vw;
   justify-content: center;
 }
@@ -509,7 +509,7 @@ b {
 .introduction__me img {
   justify-self: center;
   align-self: center;
-  width: 70%;
+  width: 100%;
   object-fit: cover;
 }
 .introduction__grid {
