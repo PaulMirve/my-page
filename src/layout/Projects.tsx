@@ -12,7 +12,8 @@ const Projects = () => {
         {
             name: 'Pets',
             description: t("projects.pets"),
-            img: '../img/pages/pets-website-head.png',
+            img: '../img/pages/pets-head.png',
+            modalImg: '../img/pages/pets.png',
             repo: '',
             live: 'https://pets-ad159.firebaseapp.com',
             stack: [Icons.typescript, Icons.react, Icons.redux, Icons.nodejs, Icons.express, Icons.mongo, Icons.sass]
@@ -20,7 +21,8 @@ const Projects = () => {
         {
             name: 'Creative Expo',
             description: t("projects.creative_expo"),
-            img: '../img/pages/creative-expo-header.png',
+            img: '../img/pages/creative-expo-head.png',
+            modalImg: '../img/pages/creative-expo.png',
             repo: '',
             live: 'https://creative-expo-80c56.web.app',
             stack: [Icons.javascript, Icons.react, Icons.sass]
@@ -28,7 +30,8 @@ const Projects = () => {
         {
             name: 'Penny',
             description: t("projects.penny"),
-            img: '../img/pages/penny-website-head.png',
+            img: '../img/pages/penny-head.png',
+            modalImg: '../img/pages/penny.png',
             repo: '',
             live: 'https://penny-1f143.web.app',
             stack: [Icons.javascript, Icons.react, Icons.firebase, Icons.sass]
@@ -36,7 +39,8 @@ const Projects = () => {
         {
             name: "Japanese Project",
             description: t("projects.japanese_project"),
-            img: '../img/pages/japanese-project-website-head.png',
+            img: '../img/pages/japanese-project-head.png',
+            modalImg: '../img/pages/japanese-project.png',
             repo: '',
             live: '',
             stack: [Icons.javascript, Icons.react, Icons.materialui]
