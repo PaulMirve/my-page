@@ -29,7 +29,7 @@
         "pets": "I made a social network to upload photos of pets. I took a lot of inspiration from the Instagram design.The photos are cropped and resized in the backend to take less space in disk. It was a very fun project to make, I enjoyed the creation of the components and the styiling.",
         "creative_expo": "In my current work, there is a dynamic that an employee can do presentations about whatever topic you are passionate about or find interesting. I talked about CSS Grid because it changes my way of building web layouts. I builded it with react to make interactive examples. My co-workers loved it.",
         "penny": "This was a very fun project to make. My girlfriend have a little dog called Penny and we like to share photos and memes of her. I made a web page to know her and a poll to vote for the most epic Penny. I have to learn the basics of firebase to save the poll results of this app.",
-        "japanese_project": "For my final project of my japanese course I had to make some project that involves all the topics of the course. I thought making a web app would be a great idea because it can persist in the web for future consults about what I saw in the course."
+        "japanese_project": "For my final project of my japanese course I had to make some project that involved all the topics of the course. I thought making a web app would be a great idea because it can persist in the web for future consults about what I saw in the course."
     },
     "jobs": {
         "current": "actual job",
