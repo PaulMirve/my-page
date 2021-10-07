@@ -10,7 +10,7 @@
         gap: 5vw;
         justify-content: center;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             grid-template-columns: 1fr;
         }
 
@@ -30,7 +30,7 @@
         align-items: start;
         gap: 4rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             grid-template-columns: 1fr;
         }
     }
