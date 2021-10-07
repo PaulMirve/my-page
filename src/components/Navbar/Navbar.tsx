@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Icons from '../../enumerables/Icons';
 import Icon from '../Icon/Icon';
+import Menu from '../Menu/Menu';
 
 const Navbar: React.FC = () => {
     const { t } = useTranslation();
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     const onLanguageChange = () => {
         const getCookie = (name: string): string | null => {
@@ -38,9 +40,17 @@ const Navbar: React.FC = () => {
                 <a href="#socials" className="navbar__link">{t("navbar.socials")}</a>
                 <a href="#resources" className="navbar__link">{t("navbar.resources")}</a>
             </div>
-            <button className="navbar__menu">
+            <button onClick={() => setMenuOpen(true)} className="navbar__menu">
                 <div></div>
             </button>
+            <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)}>
+                <a onClick={() => setMenuOpen(false)} href="#header" className="navbar__link">{t("navbar.about_me")}</a>
+                <a onClick={() => setMenuOpen(false)} href="#skills" className="navbar__link">{t("navbar.skills")}</a>
+                <a onClick={() => setMenuOpen(false)} href="#projects" className="navbar__link">{t("navbar.projects")}</a>
+                <a onClick={() => setMenuOpen(false)} href="#jobs" className="navbar__link">{t("navbar.jobs")}</a>
+                <a onClick={() => setMenuOpen(false)} href="#socials" className="navbar__link">{t("navbar.socials")}</a>
+                <a onClick={() => setMenuOpen(false)} href="#resources" className="navbar__link">{t("navbar.resources")}</a>
+            </Menu>
         </div>
     )
 }
