@@ -20,7 +20,7 @@ const Jobs = () => {
                 t("jobs.spark_techs.point-2"),
                 t("jobs.spark_techs.point-3"),
             ],
-            stack: [Icons.csharp, Icons.react, Icons.sqlserver, Icons.graphql],
+            stack: [Icons.typescript, Icons.react, Icons.graphql, Icons.csharp, Icons.sqlserver],
             current: true
         },
         {
@@ -30,7 +30,7 @@ const Jobs = () => {
                 t("jobs.application_software.point-1"),
                 t("jobs.application_software.point-2"),
             ],
-            stack: [Icons.react, Icons.redux, Icons.java, Icons.springboot, Icons.csharp]
+            stack: [Icons.javascript, Icons.react, Icons.redux, Icons.java, Icons.springboot, Icons.csharp]
         },
     ]
 

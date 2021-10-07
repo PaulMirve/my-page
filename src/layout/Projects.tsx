@@ -12,7 +12,7 @@ const Projects = () => {
         {
             name: 'Pets',
             description: t("projects.pets"),
-            img: 'https://picsum.photos/650/400?random=1',
+            img: '../img/pages/pets-website-head.png',
             repo: '',
             live: 'https://pets-ad159.firebaseapp.com',
             stack: [Icons.typescript, Icons.react, Icons.redux, Icons.nodejs, Icons.express, Icons.mongo, Icons.sass]
@@ -20,7 +20,7 @@ const Projects = () => {
         {
             name: 'Creative Expo',
             description: t("projects.creative_expo"),
-            img: 'https://picsum.photos/650/400?random=2',
+            img: '../img/pages/creative-expo-header.png',
             repo: '',
             live: 'https://creative-expo-80c56.web.app',
             stack: [Icons.javascript, Icons.react, Icons.sass]
@@ -28,7 +28,7 @@ const Projects = () => {
         {
             name: 'Penny',
             description: t("projects.penny"),
-            img: 'https://picsum.photos/650/400?random=3',
+            img: '../img/pages/penny-website-head.png',
             repo: '',
             live: 'https://penny-1f143.web.app',
             stack: [Icons.javascript, Icons.react, Icons.firebase, Icons.sass]
@@ -36,7 +36,7 @@ const Projects = () => {
         {
             name: "Japanese Project",
             description: t("projects.japanese_project"),
-            img: 'https://picsum.photos/650/400?random=4',
+            img: '../img/pages/japanese-project-website-head.png',
             repo: '',
             live: '',
             stack: [Icons.javascript, Icons.react, Icons.materialui]

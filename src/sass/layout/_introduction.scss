@@ -1,20 +1,36 @@
 .introduction {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
         grid-template-columns: 1fr;
     }
 
+    &__me {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5vw;
+        justify-content: center;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+
+        & img {
+            justify-self: center;
+            align-self: center;
+            width: 70%;
+            object-fit: cover;
+        }
+    }
+
     &__grid {
+        margin-top: 10rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: start;
         gap: 4rem;
 
-        @include respond(phone){
+        @include respond(phone) {
             grid-template-columns: 1fr;
         }
     }

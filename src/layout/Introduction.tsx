@@ -35,7 +35,11 @@ const Introduction = () => {
     ];
     return (
         <section id="introduction" className="introduction">
-            <Card {...card} />
+            <div className="introduction__me">
+                <Card {...card} />
+                <img src="../img/me.jpg" alt="Me" />
+            </div>
+
             <div className="introduction__grid">
                 {
                     widgets.map((widget, index) => {

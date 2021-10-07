@@ -454,17 +454,30 @@ b {
   font-size: 2.4rem;
 }
 
-.introduction {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
-}
 @media (max-width: 56.25em) {
   .introduction {
     grid-template-columns: 1fr;
   }
 }
+.introduction__me {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5vw;
+  justify-content: center;
+}
+@media (max-width: 37.5em) {
+  .introduction__me {
+    grid-template-columns: 1fr;
+  }
+}
+.introduction__me img {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  object-fit: cover;
+}
 .introduction__grid {
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
