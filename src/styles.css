@@ -93,7 +93,7 @@ b {
 
 .card {
   border: 3px solid #4069ee;
-  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  font-size: clamp(1.6rem, 1.5vw, 2.2rem);
   display: flex;
   flex-direction: column;
   align-items: center;
