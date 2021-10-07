@@ -8,12 +8,23 @@
     border-radius: 5px;
     font-weight: 700;
     transition: transform 0.2s ease-in;
-    &:hover{
+    border: none;
+    cursor: pointer;
+
+    &:hover {
         transform: scale(1.1);
     }
 
-    &--small{
-        font-size:  clamp(1rem, 0.8vw, 1.6rem);
+    &:active {
+        transform: scale(1.08);
+    }
+
+    &--black {
+        background-color: $color-black;
+    }
+
+    &--small {
+        font-size: clamp(1rem, 0.8vw, 1.6rem);
         padding: 0.4em 3em;
     }
 

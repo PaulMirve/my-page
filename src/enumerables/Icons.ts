@@ -25,7 +25,8 @@ enum Icons {
     sqlserver = 'icon-sqlserver',
     mysql = 'icon-mysql',
     graphql = 'icon-graphql',
-    language = 'icon-language'
+    language = 'icon-language',
+    git = 'icon-git'
 }
 
 export default Icons;

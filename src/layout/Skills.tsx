@@ -61,6 +61,10 @@ const skills: ISkill[] = [
     {
         icon: Icons.mongo,
         name: 'MongoDB'
+    },
+    {
+        icon: Icons.git,
+        name: 'Git'
     }
 ]
 

@@ -145,6 +145,11 @@ b {
   padding: 2em;
   color: #000000;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card__content p {
+  flex-grow: 1;
 }
 
 .project {
@@ -300,9 +305,17 @@ b {
   border-radius: 5px;
   font-weight: 700;
   transition: transform 0.2s ease-in;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(1.1);
+}
+.btn:active {
+  transform: scale(1.08);
+}
+.btn--black {
+  background-color: #000000;
 }
 .btn--small {
   font-size: clamp(1rem, 0.8vw, 1.6rem);
@@ -362,8 +375,8 @@ b {
 .navbar__button svg {
   width: 2rem;
   height: 2rem;
-  fill: #4069ee;
-  color: #4069ee;
+  fill: #f8f9fa;
+  color: #f8f9fa;
 }
 .navbar__menu {
   margin-left: auto;

@@ -35,13 +35,13 @@
         "current": "actual job",
         "heading": "Places where I've worked",
         "spark_techs": {
-            "point-1": "Worked alongside Skyworks Mexicali in the building and maintainance of industrial machine software. This involved creating and maintaining website and desktop application that the operators of the machines will use to keep control of the industrial production.",
+            "point-1": "Worked alongside Skyworks Mexicali in the building and maintenance  of industrial machine software. This involved creating and maintaining website and desktop applications that the operators of the machines will use to keep control of the industrial production.",
             "point-2": "Worked alongside Kenworth Mexicali in the building of a web app to keep control of the quality assurance of the trucks they assemble.",
-            "point-3": "Colaborated in the SERVCO project, a internal web application to keep control of all the employees inside the organization as well as the control of their payments, vacations, assurances, and all the matters that involves the employee."
+            "point-3": "Collaborated in the SERVCO project, an internal web application to keep control of all the employees inside the organization as well as the control of their payments, vacations, assurances, and all the matters that involve the employee."
         },
         "application_software": {
             "point-1": "Builded a web application to help the users to keep control over their KPI's using charts. Builded the backend and frontend of the application.",
-            "point-2": "Builded a penitenciary desktop application, made to keep control of the proccesses inside of a jail like the insertion of a convict, hospitalary services, inventories inside the prision and all the proccesses realized inside a prison."
+            "point-2": "Builded a penitentiary desktop application, made to keep control of the processes inside of a jail like the insertion of a convict, hospitalary services, inventories inside the prison and all the processes realized inside a prison."
         }
     },
     "socials": {

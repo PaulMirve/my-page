@@ -57,5 +57,11 @@
         padding: 2em;
         color: $color-black;
         position: relative;
+        display: flex;
+        flex-direction: column;
+
+        & p{
+            flex-grow: 1;
+        }
     }
 }

@@ -12,7 +12,11 @@ const Introduction = () => {
     const card: ICard = {
         heading: 'Frontend Developer',
         title: t("introduction.about_me.tag"),
-        description: t("introduction.about_me.description")
+        description: t("introduction.about_me.description"),
+        buttonText: 'Download CV',
+        buttonAction: () => {
+
+        }
     };
 
     const widgets: ISmallCard[] = [
