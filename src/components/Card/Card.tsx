@@ -13,7 +13,7 @@ const Card: React.FC<ICard> = ({ description, heading, title, buttonText, button
                 <p>
                     {description}
                 </p>
-                {buttonText && <button onClick={buttonAction} className="btn btn--small btn--black">{buttonText}</button>}
+                {buttonText && <a href='../docs/CVEnglish.pdf' download className="btn btn--small btn--link btn--black">{buttonText}</a>}
             </div>
         </div>
     )
