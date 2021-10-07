@@ -38,6 +38,9 @@ const Navbar: React.FC = () => {
                 <a href="#socials" className="navbar__link">{t("navbar.socials")}</a>
                 <a href="#resources" className="navbar__link">{t("navbar.resources")}</a>
             </div>
+            <button className="navbar__menu">
+                <div></div>
+            </button>
         </div>
     )
 }

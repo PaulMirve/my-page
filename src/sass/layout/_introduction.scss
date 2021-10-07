@@ -1,24 +1,18 @@
 .introduction {
-
-    @include respond(tab-port) {
-        grid-template-columns: 1fr;
-    }
-
     &__me {
         display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        gap: 5vw;
-        justify-content: center;
-
-        @include respond(tab-port) {
-            grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        & img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 5px;
         }
 
-        & img {
-            justify-self: center;
-            align-self: center;
-            width: 100%;
-            object-fit: cover;
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
         }
     }
 
@@ -27,7 +21,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        align-items: start;
         gap: 4rem;
 
         @include respond(tab-port) {

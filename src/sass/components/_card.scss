@@ -45,6 +45,10 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include respond(phone){
+            width: 90%;
+        }
     }
 
     &__content {

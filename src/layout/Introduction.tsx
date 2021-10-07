@@ -47,6 +47,18 @@ const Introduction = () => {
                     })
                 }
             </div>
+            {/* <div className="introduction__me">
+              
+                <img src="../img/me.jpg" alt="Me" />
+            </div>
+
+            <div className="introduction__grid">
+                {
+                    widgets.map((widget, index) => {
+                        return <CardSmall key={index} {...widget} />
+                    })
+                }
+            </div> */}
         </section>
     )
 }

@@ -11,6 +11,10 @@
         font-size: clamp(1rem, 1vw, 1.8rem);
         display: flex;
         gap: 1vw;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__link {
@@ -32,6 +36,47 @@
             height: 2rem;
             fill: $color-primary;
             color: $color-primary;
+        }
+    }
+
+    &__menu {
+        margin-left: auto;
+        width: 2rem;
+        background-color: transparent;
+        border: none;
+        aspect-ratio: 1;
+        display: none;
+
+        @include respond(phone){
+            display: block;
+        }
+
+        & div {
+            height: 2px;
+            width: 100%;
+            background-color: $color-primary;
+            position: relative;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $color-primary;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $color-primary;
+            }
         }
     }
 }
