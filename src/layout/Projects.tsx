@@ -14,7 +14,7 @@ const Projects = () => {
             description: t("projects.pets"),
             img: '../img/pages/pets-head.png',
             modalImg: '../img/pages/pets.png',
-            repo: '',
+            repo: 'https://github.com/PaulMirve/pets-frontend',
             live: 'https://pets-ad159.firebaseapp.com',
             stack: [Icons.typescript, Icons.react, Icons.redux, Icons.nodejs, Icons.express, Icons.mongo, Icons.sass]
         },
@@ -23,7 +23,7 @@ const Projects = () => {
             description: t("projects.creative_expo"),
             img: '../img/pages/creative-expo-head.png',
             modalImg: '../img/pages/creative-expo.png',
-            repo: '',
+            repo: 'https://github.com/PaulMirve/creative-expo',
             live: 'https://creative-expo-80c56.web.app',
             stack: [Icons.javascript, Icons.react, Icons.sass]
         },
@@ -32,7 +32,7 @@ const Projects = () => {
             description: t("projects.penny"),
             img: '../img/pages/penny-head.png',
             modalImg: '../img/pages/penny.png',
-            repo: '',
+            repo: 'https://github.com/PaulMirve/penny',
             live: 'https://penny-1f143.web.app',
             stack: [Icons.javascript, Icons.react, Icons.firebase, Icons.sass]
         },
@@ -41,8 +41,8 @@ const Projects = () => {
             description: t("projects.japanese_project"),
             img: '../img/pages/japanese-project-head.png',
             modalImg: '../img/pages/japanese-project.png',
-            repo: '',
-            live: '',
+            repo: 'https://github.com/PaulMirve/japanese-project',
+            live: 'https://japanese-project-247fe.firebaseapp.com',
             stack: [Icons.javascript, Icons.react, Icons.materialui]
         }
     ]
