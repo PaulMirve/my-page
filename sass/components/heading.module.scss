@@ -1,0 +1,66 @@
+@use '@sass/abstract/variables'as *;
+
+.main {
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 9rem;
+}
+
+.h2 {
+    font-size: 6rem;
+}
+
+.h3 {
+    font-size: 4rem;
+}
+
+.h4 {
+    font-size: 3.6rem;
+}
+
+.h5 {
+    font-size: 2.4rem;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.extra_light {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 200;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra_bold {
+    font-weight: 800;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
