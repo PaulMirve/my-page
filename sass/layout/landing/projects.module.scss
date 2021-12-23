@@ -1,4 +1,13 @@
+@use '@sass/abstract/mixins'as *;
+
 .projects {
+    margin-top: 20rem;
+    padding: 8rem 10vw 0 10vw;
+
+    @include respond(tab-port) {
+        padding: 8rem 2vw 0 2vw;
+    }
+
     &>div {
         margin-top: 8rem;
     }

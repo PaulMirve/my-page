@@ -1,4 +1,5 @@
 export interface ISkill {
     name: string,
-    img: string
+    img: string,
+    order: number
 }

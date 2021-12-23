@@ -8,9 +8,12 @@
     justify-items: start;
     margin-bottom: 30vh;
 
-    @include respond(tab-port) {
-        grid-template-columns: 1fr;
+    @include respond(tab-land) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 0 4vw;
     }
 }
 
@@ -28,8 +31,12 @@
     gap: 2rem;
     margin-top: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         flex-direction: column;
+        
+        & button{
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -38,8 +45,9 @@
     display: flex;
     gap: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         justify-content: center;
+        gap: 5rem;
     }
 
     & svg {
@@ -47,5 +55,9 @@
         color: $color-primary;
         width: 3rem;
         aspect-ratio: 1;
+
+        @include respond(tab-land) {
+            width: 8rem;
+        }
     }
 }

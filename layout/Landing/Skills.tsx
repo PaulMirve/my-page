@@ -10,7 +10,6 @@ interface Props {
 
 const Skills = ({ skills }: Props) => {
     const { t } = useTranslation();
-
     return (
         <section id="skills" className={styles.skills}>
             <Heading centered className="mb-md">
@@ -18,7 +17,7 @@ const Skills = ({ skills }: Props) => {
             </Heading>
             <div className={styles.grid}>
                 {
-                    skills.map((skill, index) => {
+                    skills.sort((a, b) => a.order - b.order).map((skill, index) => {
                         return <Skill key={index} {...skill} />
                     })
                 }
