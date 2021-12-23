@@ -1,4 +1,5 @@
 @use '@sass/abstract/mixins' as *;
+@use '@sass/abstract/variables' as *;
 
 *,
 *::before,
@@ -27,4 +28,5 @@ html {
 
 body {
     box-sizing: border-box;
+    background-color: $color-dark;
 }

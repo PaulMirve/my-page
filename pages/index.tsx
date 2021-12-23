@@ -1,20 +1,34 @@
-import type { NextPage } from 'next'
 import styles from '@sass/pages/landing.module.scss';
-import Heading from '../components/Heading';
-import Head from 'next/head'
+import IProject from 'interfaces/IProjects';
+import Header from 'layout/Landing/Header';
+import Projects from 'layout/Landing/Projects';
+import type { GetStaticProps } from 'next';
+import Head from 'next/head';
+import { getProjects } from '../firebase/projects';
 
-const Home: NextPage = () => {
+interface Props {
+  projects: IProject[]
+}
+
+const Home = ({ projects }: Props) => {
   return (
     <div className={styles.main}>
       <Head>
         <title>Paul Miranda | Software Developer</title>
       </Head>
-      <Heading>
-        Landing Page
-      </Heading>
-      <hr />
+      <Header />
+      <Projects projects={projects} />
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
+  const projects = await getProjects();
+  return {
+    props: {
+      projects
+    }
+  }
 }
 
 export default Home

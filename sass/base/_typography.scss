@@ -1,9 +1,14 @@
-@use '../abstract/variables' as *;
+@use '../abstract/variables'as *;
 
 body {
     font-family: $font-body;
     font-weight: 400;
     line-height: 1.6;
+    color: $color-white;
+}
+
+b {
+    color: $color-primary;
 }
 
 h1,

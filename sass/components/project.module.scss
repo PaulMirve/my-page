@@ -1,0 +1,163 @@
+@use '@sass/abstract/variables'as *;
+@use '@sass/abstract/mixins'as *;
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+
+    @include respond(tab-land) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    &--left .frame {
+        grid-column: 5 / 12;
+        grid-row: 1 /2;
+    }
+
+    &--left .content {
+        grid-column: 2 / 6;
+        grid-row: 1 / 2;
+    }
+
+    &--left .frame {
+        @include respond(tab-land) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
+
+    &--left .frame::after {
+        transform-origin: right;
+    }
+
+    .frame:hover .preview {
+        opacity: 1;
+    }
+
+    &--left .content {
+        @include respond(tab-land) {
+            grid-column: auto;
+            grid-row: auto;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4em;
+    border-radius: 5px;
+    background-color: $color-dark-2;
+    height: 80%;
+    grid-column: 8 / 12;
+    grid-row: 1 / 2;
+    transition: transform 0.2s ease-in;
+
+    @include respond(tab-land) {
+        grid-column: auto;
+        grid-row: auto;
+        height: 100%;
+        text-align: center;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.frame {
+    grid-column: 2 / 9;
+    grid-row: 1 /2;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, 0.6);
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform 0.2s ease-in;
+    }
+
+
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+
+    @include respond(tab-land) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+}
+
+.preview {
+    position: absolute;
+    z-index: 2;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0;
+    @include absCenter;
+    transition: opacity 0.2s ease-in;
+
+    &:hover {
+        border-bottom: 1px solid $color-white;
+    }
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.stack {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    & img {
+        fill: $color-primary;
+        color: $color-primary;
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+.description {
+    flex-grow: 1;
+    font-size: clamp(1.6rem, 1vw, 1.8rem);
+}
+
+.links {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img {
+    width: 100%;
+}

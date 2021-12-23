@@ -1,0 +1,54 @@
+{
+    "navbar": {
+        "about_me": "Acerca de mi",
+        "skills": "Skills",
+        "projects": "Proyectos",
+        "jobs": "Trabajos",
+        "socials": "Redes sociales",
+        "resources": "Recursos"
+    },
+    "header": {
+        "caption": "Un desarrollador <b>fullstack</b> con pasión por el <b>frontend</b>"
+    },
+    "introduction": {
+        "about_me": {
+            "tag": "Acerca de mi",
+            "description": "Soy Paul Miranda, un desarrollador de software con años de experiencia en el desarrollo web y aplicaciones de escritorio. Disfuto mucho de trabajar y crear proyectos con Typescript y Javascript. Siempre me mantengo curioso acerca de las nuevas tecnologías y trato de probarlas y escribir aplicaciones sencillas con ellas como hobby. Me gusta enfocarme en el desarrollo frontend sin embargo también desarrollo aplicaciones backend para mantenerme actualizado en esta área del desarrollo. Mi objetivo estos días es enfocarme en mejorar mis habiliades como frontend sobre todo en la parte de diseño de páginas web y experiencia de usuario."
+        },
+        "widget-1": "Experimentado en desarrollo web, tanto del lado del cliente como del servidor.",
+        "widget-2": "Conocimiento acerca de tecnologías de backend y bases de datos",
+        "widget-3": "Experiencia en la construcción de aplicaciones de escritorio de larga escala.",
+        "widget-4": "Desarrollado y diseñado páginas web atractivas y responsivas."
+    },
+    "skills": {
+        "heading": "Skills"
+    },
+    "projects": {
+        "heading": "Proyectos personales",
+        "see_preview": "Ver diseño",
+        "pets": "Construí una red social para subir fotos de mascotas. Tome mucha inspiración del diseño de Instagram. Las fotos que se suben son recortadas y re escaladas por el servidor para ahorrar espacio en el disco. Fue un proyecto muy divertido de realizar.",
+        "creative_expo": "En mi trabajo actual existe una dinámica donde los colaboradores de la compañía pueden hacer expos acerca de temas que les apasionen o encuentren interesantes. Expusé sobre CSS Grid porque cambió mi manera de construir layouts en aplicaciones web y añadí ejemplos interactivos con React. Mis compañeros lo amaron.",
+        "penny": "Mi novia tiene una perrita llamada Penny. Usualmente compartimos fotos y memes de ella, así que pensé que sería una buena idea hacerle una página donde todos la pudieran conocer y votar por cuál es la Penny más épica. Fue un proyecto muy divertido de hacer",
+        "japanese_project": "Para mi proyecto final de japonés tenía que hacer un proyecto donde combinara todos los temas que vimos en el curso. Pensé que sería una buena idea tener una págna web que también sirviera como temario para cuando quisiera volver a repasar o consultar esos temas."
+    },
+    "jobs": {
+        "current": "trabajo actual",
+        "heading": "Experiencia profesional",
+        "spark_techs": {
+            "point-1": "En conjunto con Skyworks Mexicali, trabajé en la creación y mantenimiento de software para máquinas industriales, esto involucraba el desarrollo de aplicaciones web y de escritorio que los operadores de la maquinaria pudieran manejar para llevar el control en la producción.",
+            "point-2": "En conjunto con Kenworth Mexicali, trabajé en el desarrollo de una aplicación web para mantener el control de cálidad de los camiones que ensamblan.",
+            "point-3": "Colaboré en el proyecto SERVCO, un sistema desarrollado para el departamento de recursos humanos y contaduría para llevar el control de los colaboradores de la empresa y manejar aspectos como su nómina, seguros, vacaciones y todos los aspectos relacionados con el trabajador dentro de la empresa."
+        },
+        "application_software": {
+            "point-1": "Construí una aplicación web para ayudar a los usuarios a mantener controles de sus KPI (Key Performance Indicator). Los usuarios ingresaban fuentes de datos que posteriormente podían modelar para ver la información mostrada en forma de gráficas.",
+            "point-2": "Construí un aplicación de escritorio para sistemas penitenciarios, donde se mantenía el control de la entrada de los presos y procesos que se llevaban a cabo dentro de la prisión como salud y visitas."
+        }
+    },
+    "socials": {
+        "heading": "Lugares donde puedes encontrarme"
+    },
+    "footer": {
+        "code": "El código de esta página puede ser encontrado <a target='_blank' rel='noopener noreferrer' href='https://github.com/PaulMirve'>aquí</a>",
+        "made_by": "El código y diseño de esta página esta hecho por <b>Paul Miranda<b/>"
+    }
+}
