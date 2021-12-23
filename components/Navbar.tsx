@@ -30,9 +30,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <button onClick={onLanguageChange} className={styles.button}>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="ionicon" viewBox="0 0 512 512"><title>Language</title><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M48 112h288M192 64v48M272 448l96-224 96 224M301.5 384h133M281.3 112S257 206 199 277 80 384 80 384" /><path d="M256 336s-35-27-72-75-56-85-56-85" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" /></svg>
             </button>
             <div className={styles.links}>
                 <a href="#header" className={styles.link}>{t("navbar.about_me")}</a>
@@ -40,17 +38,6 @@ const Navbar = () => {
                 <a href="#projects" className={styles.link}>{t("navbar.projects")}</a>
                 <a href="#jobs" className={styles.link}>{t("navbar.jobs")}</a>
             </div>
-            <button onClick={() => setMenuOpen(true)} className={styles.menu}>
-                <div></div>
-            </button>
-            {/* <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)}>
-                <a onClick={() => setMenuOpen(false)} href="#header" className={styles.link}>{t("navbar.about_me")}</a>
-                <a onClick={() => setMenuOpen(false)} href="#skills" className={styles.link}>{t("navbar.skills")}</a>
-                <a onClick={() => setMenuOpen(false)} href="#projects" className={styles.link}>{t("navbar.projects")}</a>
-                <a onClick={() => setMenuOpen(false)} href="#jobs" className={styles.link}>{t("navbar.jobs")}</a>
-                <a onClick={() => setMenuOpen(false)} href="#socials" className={styles.link}>{t("navbar.socials")}</a>
-                <a onClick={() => setMenuOpen(false)} href="#resources" className={styles.link}>{t("navbar.resources")}</a>
-            </Menu> */}
         </div>
     )
 }
