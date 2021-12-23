@@ -1,0 +1,51 @@
+@use '@sass/abstract/variables'as *;
+@use '@sass/abstract/mixins'as *;
+
+.introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20vw;
+    justify-items: start;
+    margin-bottom: 30vh;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.image {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 1.8rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+}
+
+.socials {
+
+    display: flex;
+    gap: 2rem;
+
+    @include respond(tab-port) {
+        justify-content: center;
+    }
+
+    & svg {
+        fill: $color-primary;
+        color: $color-primary;
+        width: 3rem;
+        aspect-ratio: 1;
+    }
+}

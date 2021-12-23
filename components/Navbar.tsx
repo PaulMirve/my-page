@@ -39,8 +39,6 @@ const Navbar = () => {
                 <a href="#skills" className={styles.link}>{t("navbar.skills")}</a>
                 <a href="#projects" className={styles.link}>{t("navbar.projects")}</a>
                 <a href="#jobs" className={styles.link}>{t("navbar.jobs")}</a>
-                <a href="#socials" className={styles.link}>{t("navbar.socials")}</a>
-                <a href="#resources" className={styles.link}>{t("navbar.resources")}</a>
             </div>
             <button onClick={() => setMenuOpen(true)} className={styles.menu}>
                 <div></div>

@@ -8,6 +8,7 @@ import Skills from 'layout/Landing/Skills';
 import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { getProjects } from '../firebase/projects';
+import Introduction from 'layout/Landing/Introduction';
 
 interface Props {
   projects: IProject[],
@@ -21,6 +22,7 @@ const Home = ({ projects, skills }: Props) => {
         <title>Paul Miranda | Software Developer</title>
       </Head>
       <Header />
+      <Introduction />
       <Skills skills={skills} />
       <Projects projects={projects} />
     </div>

@@ -1,5 +1,5 @@
-@use '@sass/abstract/mixins' as *;
-@use '@sass/abstract/variables' as *;
+@use '@sass/abstract/mixins'as *;
+@use '@sass/abstract/variables'as *;
 
 *,
 *::before,
@@ -20,6 +20,8 @@ html {
     @include respond(tab-port) {
         font-size: 50%;
     }
+
+    scroll-behavior: smooth;
 
     // @include respond(big-desktop) {
     //     font-size: 76%;
