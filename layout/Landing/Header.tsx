@@ -6,7 +6,7 @@ const Header = () => {
     const { t } = useTranslation();
 
     return (
-        <header className={styles.main}>
+        <header id='header' className={styles.main}>
             <span>
                 <Heading className={styles.heading}>
                     Paul Miranda

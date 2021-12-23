@@ -1,0 +1,19 @@
+@use '@sass/abstract/mixins'as *;
+@use '@sass/abstract/variables'as *;
+
+.skills {
+    display: grid;
+    justify-items: center;
+}
+
+.grid {
+    width: 35%;
+    display: grid;
+    gap: 2rem 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+
+    @include respond(phone) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+    }
+}

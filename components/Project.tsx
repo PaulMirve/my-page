@@ -17,7 +17,7 @@ const Project = ({ name, description, img, repo, live, stack, orientation, modal
         <div className={`${styles.project} ${orientation === "left" ? 'project--left' : ' '}`}>
             <div className={styles.frame}>
                 <p onClick={() => setModalOpen(true)} className={styles.preview}>{t("projects.see_preview")}</p>
-                <img src={img} alt={name} />
+                <img src={img} alt={name} loading='lazy' />
             </div>
             <div className={styles.content}>
                 <h3 className={styles.title}>{name}</h3>
@@ -39,7 +39,7 @@ const Project = ({ name, description, img, repo, live, stack, orientation, modal
                 </div>
             </div>
             <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-                <img className={styles.img} src={modalImg} alt="Modal" />
+                <img className={styles.img} src={modalImg} alt="Modal" loading='lazy' />
             </Modal>
         </div>
     )

@@ -4,6 +4,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
+import Navbar from 'components/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   i18n
@@ -21,7 +22,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       },
       react: { useSuspense: false }
     });
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp
