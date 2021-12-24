@@ -10,7 +10,7 @@ const Job = ({ name, tasks, current, stack }: IJob) => {
             <div className={styles.stack}>
                 {
                     stack.map((icon, index) => {
-                        return <img key={index} />
+                        return <img key={index} src={icon} loading='lazy' />
                     })
                 }
             </div>

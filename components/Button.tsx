@@ -18,7 +18,7 @@ const Button = ({ variant, size, className = "", children, ...props }: Props) =>
         }
     }
     return (
-        <button className={`${styles.btn} ${getVariant()} ${size === "small" && styles.small} ${className}`}>
+        <button className={`${styles.btn} ${getVariant()} ${size === "small" && styles.small} ${className}`} {...props}>
             {children}
         </button>
     )

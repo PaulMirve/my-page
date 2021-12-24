@@ -1,10 +1,9 @@
 import styles from '@sass/components/project.module.scss';
 import IProject from 'interfaces/IProjects';
-import React, { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import Modal from './Modal'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
+import Modal from './Modal';
 
 interface Props extends IProject {
     orientation: 'left' | 'right'
@@ -25,7 +24,7 @@ const Project = ({ name, description, img, repo, live, stack, orientation, modal
                     {
                         stack.map((tech, index) => {
                             return (
-                                <img key={index} src={tech} />
+                                <img key={index} src={tech} loading='lazy' />
                             );
                         })
                     }
@@ -34,8 +33,8 @@ const Project = ({ name, description, img, repo, live, stack, orientation, modal
                     {description}
                 </div>
                 <div className={styles.links}>
-                    <Button size='small'>View repo</Button>
-                    <Button size='small'>View live</Button>
+                    <Button onClick={() => window.open(repo, '_blank')?.focus()} size='small'>View repo</Button>
+                    <Button onClick={() => window.open(live, '_blank')?.focus()} size='small'>View live</Button>
                 </div>
             </div>
             <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>

@@ -4,7 +4,7 @@ import { ISkill } from 'interfaces/ISkill';
 const Skill = ({ name, img }: ISkill) => {
     return (
         <div className={styles.skill}>
-            <img src={img} alt={name} />
+            <img src={img} alt={name} loading='lazy' />
             <p>{name}</p>
         </div>
     )

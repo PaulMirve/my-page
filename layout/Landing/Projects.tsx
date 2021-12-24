@@ -12,7 +12,7 @@ function Projects({ projects }: Props) {
         <section id="projects" className={styles.projects}>
             <Heading centered>Personal projects</Heading>
             {
-                projects.map((project, index) => (
+                projects.sort((a, b) => a.order - b.order).map((project, index) => (
                     <Project key={index} orientation="left" {...project} />
                 ))
             }
