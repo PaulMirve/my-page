@@ -6,5 +6,8 @@ module.exports = {
       "res.cloudinary.com",
       "cdn.jsdelivr.net"
     ]
+  },
+  env: {
+    FIREBASE_STORAGE_URL: process.env.FIREBASE_STORAGE_URL
   }
 }

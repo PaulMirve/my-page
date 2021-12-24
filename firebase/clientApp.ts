@@ -1,7 +1,8 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore'
+import firebase from 'firebase/compat/app';
+import { getFirestore } from 'firebase/firestore';
+import 'firebase/compat/storage';
 
-const app = initializeApp({
+const app = firebase.initializeApp({
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
     projectId: process.env.FIREBASE_PROJECT_ID,
@@ -12,4 +13,4 @@ const app = initializeApp({
 
 const database = getFirestore(app);
 
-export { database }
+export { database, firebase }
