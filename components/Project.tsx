@@ -29,8 +29,10 @@ const Project = ({ name, description, img, repo, live, stack, orientation, modal
                         })
                     }
                 </div>
-                <div className={styles.description}>
-                    {description}
+                <div className={styles.wrapper}>
+                    <div className={styles.description}>
+                        {description}
+                    </div>
                 </div>
                 <div className={styles.links}>
                     <Button onClick={() => window.open(repo, '_blank')?.focus()} size='small'>View repo</Button>

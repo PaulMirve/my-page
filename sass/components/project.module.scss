@@ -148,9 +148,19 @@
     }
 }
 
-.description {
+.wrapper {
     flex-grow: 1;
+    position: relative;
+    overflow: scroll;
+}
+
+.description {
+    position: absolute;
     font-size: clamp(1.6rem, 1vw, 1.8rem);
+
+    @include respond(tab-land) {
+        position: initial;
+    }
 }
 
 .links {
