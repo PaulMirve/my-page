@@ -31,7 +31,7 @@ const Home = ({ projects, skills, jobs }: Props) => {
       <Skills skills={skills} />
       <Projects projects={projects} />
       <Jobs jobs={jobs} />
-      <Footer/>
+      <Footer />
     </div>
   )
 }
@@ -45,7 +45,8 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
       projects,
       skills,
       jobs
-    }
+    },
+    revalidate: 86400
   }
 }
 
