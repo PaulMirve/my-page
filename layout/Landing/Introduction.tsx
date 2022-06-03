@@ -26,7 +26,7 @@ const Introduction = () => {
         <section className={styles.introduction}>
             <Image
                 className={styles.image}
-                src="https://res.cloudinary.com/dlk43rcsj/image/upload/v1654277795/My%20Page/Foto_profesional_gjsy2y.jpg"
+                src="https://res.cloudinary.com/dlk43rcsj/image/upload/v1654278481/My%20Page/Foto_profesional_cyy1x6.jpg"
                 alt='Me'
                 height={400}
                 width={400} />
