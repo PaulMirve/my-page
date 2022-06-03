@@ -152,6 +152,10 @@
     flex-grow: 1;
     position: relative;
     overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .description {

@@ -6,6 +6,12 @@
     font-size: 1.4rem;
     padding: 4em;
 
+    & a{
+        color: $color-primary;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
     & small {
         color: $color-grey;
     }
