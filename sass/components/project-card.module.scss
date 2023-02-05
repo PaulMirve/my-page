@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  gap: 5rem;
+  max-height: 45rem;
+  overflow: hidden;
+}
+
+.frame {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 30rem;
+  animation: carousel 20s linear infinite;
+  height: 200%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  flex-grow: 1;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

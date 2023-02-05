@@ -1,0 +1,23 @@
+.project {
+  display: grid;
+  grid-template-columns: 350px 430px;
+  align-items: center;
+  gap: 12rem;
+}
+
+.actions {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.2rem;
+}
+
+.img {
+  border-radius: 10px;
+  min-width: 430px !important;
+  height: 330px !important;
+}
+
+.techs{
+  display: flex;
+  gap: 1.5rem;
+}

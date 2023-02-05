@@ -1,0 +1,13 @@
+@use '@sass/abstract/mixins' as *;
+
+.layout {
+  padding: var(--global-padding);
+  padding-top: 12em;
+  background-color: var(--background);
+  padding-bottom: 20rem;
+
+  @include respond(phone) {
+    padding: 0 4em;
+    padding-top: 12em;
+  }
+}

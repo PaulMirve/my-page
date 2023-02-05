@@ -1,0 +1,30 @@
+@use '@sass/abstract/mixins' as *;
+
+.menu {
+  display: flex;
+  gap: 4rem;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 12rem;
+  min-width: 12rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row{
+  display: flex;
+  gap: 1rem;
+}
+
+.title{
+  margin-left: 19rem;
+  margin-bottom: 1rem;
+}

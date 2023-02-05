@@ -1,0 +1,58 @@
+@use 'sass:map';
+@use '../abstract/mixins' as *;
+@use '../base/typography' as *;
+
+.light {
+  @include themify(light);
+}
+
+.dark {
+  @include themify(dark);
+}
+
+:root {
+  --global-padding: 0 18vw;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+
+  b {
+    color: var(--primary);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  //This defines what one rem is
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  // @include respond(big-desktop) {
+  //     font-size: 76%;
+  // }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $body;
+}

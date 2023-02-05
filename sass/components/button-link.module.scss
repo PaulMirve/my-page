@@ -1,0 +1,30 @@
+@use '@sass/base/typography' as *;
+
+.buttonLink {
+  font-family: $body;
+  padding: 0.6em 1.5em;
+  font-size: 1.8rem;
+  border: 1px solid var(--primary);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 1rem;
+  color: var(--primary);
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--contrast);
+
+    & svg {
+      color: var(--contrast) !important;
+      fill: var(--contrast) !important;
+    }
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

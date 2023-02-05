@@ -1,0 +1,35 @@
+@use '@sass/base/typography' as *;
+@use '@sass/abstract/mixins' as *;
+
+.navbar {
+  display: flex;
+  padding: 2em 20rem;
+  background: var(--background);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  transition: top 0.2s ease;
+  top: -10rem;
+}
+
+.links {
+  display: flex;
+  margin-left: auto;
+  gap: 2.4rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.visible {
+  top: 0;
+}
