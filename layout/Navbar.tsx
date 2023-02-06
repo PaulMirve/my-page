@@ -6,6 +6,7 @@ import Icon from "components/Icon";
 import classNames from "classnames";
 import { useTheme } from "@hooks/useTheme";
 import { useRouter } from "next/router";
+import Sidebar from "components/Sidebar";
 
 const links: { name: string; to: string }[] = [
   {
@@ -26,6 +27,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const { push } = useRouter();
   const [visible, setVisible] = useState(true);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [lastScrollPositon, setLastScrollPosition] = useState(0);
 
   const handleScroll = () => {
@@ -60,6 +62,13 @@ const Navbar = () => {
         />
         <Icon name="moon" />
       </div>
+      <div className={styles.hamburguer}>
+        <Icon
+          name="hamburguer"
+          size={30}
+          onClick={() => setIsSidebarVisible(true)}
+        />
+      </div>
       <div className={styles.links}>
         {links.map(({ name, to }, index) => (
           <div
@@ -74,6 +83,24 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+      <Sidebar
+        visible={isSidebarVisible}
+        onClose={() => setIsSidebarVisible(false)}>
+        <div className={styles.sidebarLinks}>
+          {links.map(({ name, to }, index) => (
+            <div
+              style={{ cursor: "pointer" }}
+              key={index}
+              className={styles.link}
+              onClick={() => push(to)}>
+              <Typography color="primary" bold>
+                {index + 1}.
+              </Typography>
+              <Typography>{name}</Typography>
+            </div>
+          ))}
+        </div>
+      </Sidebar>
     </div>
   );
 };

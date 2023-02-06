@@ -39,11 +39,11 @@ const Home = () => {
   const { theme } = useTheme();
 
   return (
-    <div style={{ scrollBehavior: "smooth" }}>
+    <div style={{ scrollBehavior: "smooth", paddingBottom: 400 }}>
       <Head>
         <title>Paul Miranda | Software Developer</title>
       </Head>
-      <Typography style={{ marginTop: 100 }} variant="bigTitle">
+      <Typography style={{ paddingTop: 100 }} variant="bigTitle">
         Paul Miranda
       </Typography>
       <Typography>
@@ -58,10 +58,11 @@ const Home = () => {
         style={{ marginTop: 20 }}
         onClick={() => {
           push("/CV.pdf");
-        }}>
+        }}
+        className={styles.heroButton}>
         Download CV
       </Button>
-      <Section style={{ marginTop: 300 }}>
+      <Section style={{ marginTop: 350 }}>
         <SectionTitle id="about" number={1}>
           About
         </SectionTitle>
@@ -92,12 +93,14 @@ const Home = () => {
             style={{
               backgroundColor: theme === "dark" ? "var(--text)" : "transparent",
               borderRadius: "50%",
+              width: IMAGE_SIZE,
+              height: IMAGE_SIZE,
             }}>
             <Image width={IMAGE_SIZE} height={IMAGE_SIZE} src={ME} alt="me" />
           </div>
         </div>
       </Section>
-      <Section>
+      <Section style={{ marginTop: 200 }}>
         <SectionTitle id="experience" number={2}>
           Experience
         </SectionTitle>

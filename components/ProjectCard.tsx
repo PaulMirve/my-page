@@ -17,6 +17,7 @@ const ProjectCard = ({ project }: Props) => {
       <div className={styles.photos}>
         <div className={styles.frame}>
           <Image
+            className={styles.img}
             src="https://picsum.photos/500/500?1"
             alt="Project"
             width={300}
@@ -25,6 +26,7 @@ const ProjectCard = ({ project }: Props) => {
         </div>
         <div className={styles.frame}>
           <Image
+            className={styles.img}
             src="https://picsum.photos/500/500?2"
             alt="Project"
             width={300}
@@ -33,6 +35,7 @@ const ProjectCard = ({ project }: Props) => {
         </div>
         <div className={styles.frame}>
           <Image
+            className={styles.img}
             src="https://picsum.photos/500/500"
             alt="Project"
             width={300}

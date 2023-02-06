@@ -13,7 +13,26 @@ export type IconName =
   | "caret-right"
   | "code"
   | "linkedin"
-  | "codepen";
+  | "codepen"
+  | "hamburguer";
+
+const Hamburguer = ({ ...props }: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
+  );
+};
 
 const GithubFilled = ({ ...props }: SVGProps<SVGSVGElement>) => {
   return (
@@ -162,6 +181,7 @@ const map: { [key in IconName]: FC<SVGProps<SVGSVGElement>> } = {
   codepen: Codepen,
   linkedin: Linkedin,
   "github-filled": GithubFilled,
+  hamburguer: Hamburguer,
 };
 
 type Props = {

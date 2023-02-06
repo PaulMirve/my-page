@@ -1,11 +1,23 @@
 @use '@sass/abstract/mixins' as *;
 
+.heroButton {
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: min-content;
   gap: 10rem;
   margin-top: 5rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+  }
 }
 
 .projects {

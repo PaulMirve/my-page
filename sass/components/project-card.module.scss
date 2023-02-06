@@ -1,8 +1,15 @@
+@use '@sass/abstract/mixins' as *;
+
 .card {
   display: flex;
   gap: 5rem;
   max-height: 45rem;
   overflow: hidden;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+    max-height: initial;
+  }
 }
 
 .frame {
@@ -18,6 +25,12 @@
   min-width: 30rem;
   animation: carousel 20s linear infinite;
   height: 200%;
+
+  @include respond(phone) {
+    width: 100%;
+    flex-direction: row;
+    animation: none;
+  }
 }
 
 .content {

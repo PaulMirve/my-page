@@ -8,4 +8,5 @@ export type Color =
   | "dark"
   | "grey"
   | "light-grey"
-  | "contrast";
+  | "contrast"
+  | "white";

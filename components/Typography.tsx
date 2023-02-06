@@ -40,7 +40,7 @@ const Typography = ({
   );
 
   return (
-    <p
+    <div
       {...props}
       style={{ color: _color, ...style }}
       className={classNames(
@@ -50,7 +50,7 @@ const Typography = ({
         className,
       )}>
       {children}
-    </p>
+    </div>
   );
 };
 

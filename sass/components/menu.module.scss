@@ -1,30 +1,61 @@
 @use '@sass/abstract/mixins' as *;
 
-.menu {
-  display: flex;
-  gap: 4rem;
+.main {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    '. title'
+    'options content';
+  column-gap: 2rem;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'options'
+      'title'
+      'content';
+  }
 }
 
-.options{
+.options {
+  grid-area: options;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 12rem;
   min-width: 12rem;
+
+  @include respond(phone) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
-.content{
+.label {
+  @include respond(phone) {
+    width: 12rem;
+  }
+}
+
+.content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.row{
+.row {
   display: flex;
   gap: 1rem;
 }
 
-.title{
-  margin-left: 19rem;
+.title {
+  margin-left: 20px;
   margin-bottom: 1rem;
+  grid-area: title;
+
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
 }

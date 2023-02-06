@@ -10,18 +10,36 @@
   z-index: 2;
   transition: top 0.2s ease;
   top: -10rem;
+
+  @include respond(phone) {
+    padding: 3em;
+  }
 }
 
 .links {
   display: flex;
   margin-left: auto;
   gap: 2.4rem;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  & div {
+    justify-content: flex-end;
+  }
 }
 
 .toggle {
@@ -32,4 +50,13 @@
 
 .visible {
   top: 0;
+}
+
+.hamburguer {
+  display: none;
+
+  @include respond(phone) {
+    margin-left: auto;
+    display: block;
+  }
 }

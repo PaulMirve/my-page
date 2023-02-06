@@ -7,11 +7,17 @@ const Footer = () => {
   const { theme } = useTheme();
   const date = new Date();
   return (
-    <div className={classNames(theme, styles.footer)}>
-      <Typography color="contrast">
+    <div
+      style={{
+        backgroundColor: theme === "dark" ? "var(--grey)" : "var(--dark)",
+      }}
+      className={classNames(theme, styles.footer)}>
+      <Typography color={theme === "dark" ? "white" : "contrast"}>
         Designed and Built by Paul Miranda
       </Typography>
-      <Typography color="contrast">{date.getFullYear()}</Typography>
+      <Typography color={theme === "dark" ? "white" : "contrast"}>
+        {date.getFullYear()}
+      </Typography>
     </div>
   );
 };

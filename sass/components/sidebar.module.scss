@@ -1,0 +1,30 @@
+.wrapper {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: var(--background);
+  width: 30rem;
+  padding: 3em 4em;
+  position: absolute;
+  right: -30rem;
+  transition: right 0.2s ease;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+
+  & .sidebar {
+    right: 0;
+  }
+}
