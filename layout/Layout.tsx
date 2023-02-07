@@ -1,5 +1,4 @@
 import { Theme, ThemeContext } from "@context/ThemeContext";
-import { useLocalStorage } from "@hooks/useLocalStorage";
 import styles from "@sass/components/layout.module.scss";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
