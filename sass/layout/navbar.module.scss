@@ -11,8 +11,12 @@
   transition: top 0.2s ease;
   top: -10rem;
 
+  @include respond(tab-land) {
+    padding: 2em 10em;
+  }
+
   @include respond(phone) {
-    padding: 3em;
+    padding: 1em 3em;
   }
 }
 

@@ -19,7 +19,7 @@ const links: { name: string; to: string }[] = [
   },
   {
     name: "Projects",
-    to: "/",
+    to: "/#projects",
   },
 ];
 
@@ -71,16 +71,16 @@ const Navbar = () => {
       </div>
       <div className={styles.links}>
         {links.map(({ name, to }, index) => (
-          <div
+          <a
             style={{ cursor: "pointer" }}
             key={index}
             className={styles.link}
-            onClick={() => push(to)}>
+            href={to}>
             <Typography color="primary" bold>
               {index + 1}.
             </Typography>
             <Typography>{name}</Typography>
-          </div>
+          </a>
         ))}
       </div>
       <Sidebar

@@ -4,4 +4,6 @@ export type Project = {
   description: string;
   live: string;
   repo: string;
+  order: number;
+  images: string[];
 };

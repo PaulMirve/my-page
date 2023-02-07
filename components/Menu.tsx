@@ -1,4 +1,5 @@
 import styles from "@sass/components/menu.module.scss";
+import { Job } from "@_types/Job";
 import classNames from "classnames";
 import { HTMLProps, useState } from "react";
 import Icon from "./Icon";
@@ -6,8 +7,7 @@ import Typography from "./Typography";
 
 export type MenuOption = {
   index: number;
-  label: string;
-  points: string[] | JSX.Element[];
+  job: Job;
 };
 
 type Props = {
@@ -23,11 +23,17 @@ const Menu = ({ options, ...props }: Props) => {
         variant="title"
         style={{ fontSize: 20 }}
         className={styles.title}>
-        Software Engineer
+        {selectedOption.job.title}
+        {selectedOption.job.current && (
+          <Typography color="grey">Current</Typography>
+        )}
       </Typography>
       <div className={styles.options}>
         {options.map((option) => {
-          const { index, label } = option;
+          const {
+            index,
+            job: { name },
+          } = option;
           return (
             <Typography
               key={index}
@@ -36,13 +42,13 @@ const Menu = ({ options, ...props }: Props) => {
               style={{ lineHeight: "22px" }}
               onClick={() => setSelectedOption(option)}
               className={styles.label}>
-              {label}
+              {name}
             </Typography>
           );
         })}
       </div>
       <div className={styles.content}>
-        {selectedOption.points.map((option, index) => {
+        {selectedOption.job.tasks.map((option, index) => {
           return (
             <div key={index} className={styles.row}>
               <div style={{ width: 20 }}>

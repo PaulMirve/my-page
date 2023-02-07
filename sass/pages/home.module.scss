@@ -6,6 +6,36 @@
   }
 }
 
+.hero {
+  position: relative;
+  padding: 10em 0;
+}
+
+.socials {
+  position: absolute;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include respond(phone) {
+    position: initial;
+    flex-direction: row;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 1.2rem;
+
+  & li {
+    color: var(--primary);
+  }
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr auto;
